@@ -3,7 +3,7 @@ import Statistics from "../Statistics";
 import Feedbackoptions from "../FeedbackOptions";
 import Section from "../Section";
 import { countTotal, countPositivePercentage } from '../../helpers/index';
-
+import Options from '../../utils/FeedbackButton'
 
 class Feedback extends Component {
   state = {
@@ -25,7 +25,7 @@ class Feedback extends Component {
     return (
         <Section title={"Please leave feedback"}>
           <Feedbackoptions
-            // options={}
+            options={Object.values(Options)}
             onLeaveFeedback={this.handleClick}
           />
           <Statistics
