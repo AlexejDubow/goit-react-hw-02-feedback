@@ -1,5 +1,5 @@
 export default Object.freeze({
-  NORMAL: 'good',
+  GOOD: 'good',
   NEUTRAL: 'neutral',
   BAD: 'bad',
 });
