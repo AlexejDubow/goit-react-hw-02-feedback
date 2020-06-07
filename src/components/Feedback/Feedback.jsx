@@ -5,7 +5,7 @@ import Section from "../Section";
 import { countTotal, countPositivePercentage } from '../../helpers/index';
 import Options from '../../utils/FeedbackButton'
 
-class Feedback extends Component {
+export default class Feedback extends Component {
   state = {
     good: 0,
     bad: 0,
@@ -39,4 +39,4 @@ class Feedback extends Component {
     );
   }
 }
-export default Feedback;
+// export default Feedback;
